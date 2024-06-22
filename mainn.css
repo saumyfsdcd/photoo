@@ -733,7 +733,8 @@ footer h2{
     padding: 24px;
   }
   .item:hover{
-      color: #fff;
+    text-decoration: underline;
+      color: black;
       background: rgba(255, 255, 255, 0.15);
   }
   
