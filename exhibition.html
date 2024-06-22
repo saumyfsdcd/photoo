@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitions - Photographer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.year {
+    margin-bottom: 20px;
+}
+
+.year h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #333;
+    padding: 10px 0;
+    cursor: pointer;
+    margin: 0;
+}
+
+.exhibitions-list {
+    list-style: none;
+    padding: 0;
+    display: none;
+    margin-top: 10px;
+}
+
+.exhibitions-list li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.exhibitions-list li:nth-child(odd) {
+    background-color: #e9e9e9;
+}
+
+    </style>
+</head>
+<body>
+        <h1>Exhibitions</h1>
+        <div class="year">
+            <h2 onclick="toggleDropdown(this)">2024</h2>
+            <ul class="exhibitions-list">
+                <li>Parcours d’artistes, Enghien - 1-2/06/2024 🇧🇪</li>
+                <li>Groupe exhibition Urbex - Galerie Hottin - 02/04/2024-05/2024 🇧🇪</li>
+                <li>Groupe exhibition Urbex - 6-7/04/2024 Namur 🇧🇪</li>
+                <li>Chambres avec vues, parcours d’artistes - 16, 23-24 March 2024 "Le peanuts" Rue de l'Ourage 3, 5000 Namur 🇧🇪</li>
+                <li>Group exhibition "Les Artistes" - 8-9/10/03/2024 Waremme 🇧🇪</li>
+                <li>Solo exhibition - 06-31/01/2024 "Arsène café" Namur 🇧🇪</li>
+            </ul>
+        </div>
+        <div class="year">
+            <h2 onclick="toggleDropdown(this)">2023</h2>
+            <ul class="exhibitions-list">
+                <li>Group exhibition "Why do you do it" - Boomerang gallery - 16/10/2023 🇺🇸</li>
+                <li>Group exhibition quest intitulé Etincelle - Namur - 21/10/2023 🇧🇪</li>
+                <li>Group exhibition "Espace Casa photo Waterloo" - Parcours d’artistes - 29/09-01/10/2023 🇧🇪</li>
+                <li>Digital art exhibition Nonamecollectivegallery from London - "August challenge" 🇬🇧</li>
+                <li>Solo exhibition "Sweet Oblivion" - SPACEPLACEONE gallery - 21/09/2023 🇺🇸</li>
+                <li>Admitted for the Vienna prize 2023 🇦🇹</li>
+                <li>Group exhibition in digital art HOLYARTGALLERY - "Art on loops" Paros island - 11/04/2023 🇬🇷</li>
+                <li>Group exhibition SPACEPLACEONE Gallery - "Reflections of the future" - 16-30/03/2023 🇺🇸</li>
+                <li>Group exhibition "Frames within frames" - PRAXIS Gallery - 18/03-01/04/2023 🇺🇸</li>
+                <li>Group exhibition "Empty places abandoned" - PRAXIS Gallery - 21/01-04/03/2023 🇺🇸</li>
+                <li>Group digital art exhibition AT NIKON PLAZA PARIS 🇫🇷</li>
+                <li>3rd place in photography for "International Contemporary Art" - Artcertificate 🇫🇷</li>
+                <li>Special mention - Brussels art view "winter prize", "Spring prize", "summer", "fall" 2023 🇧🇪</li>
+                <li>4th in category 44-unmanipulated photography-still life - American World art award 🇺🇸</li>
+                <li>Group exhibition at "Le reservoir bar" - Brussels - 10/12/2022 to 11/01/2023 🇧🇪</li>
+            </ul>
+        </div>
+        <div class="year">
+            <h2 onclick="toggleDropdown(this)">2022</h2>
+            <ul class="exhibitions-list">
+                <li>Selected for the Brusselsartvue foundation 2022 annual prize 🇧🇪</li>
+                <li>Group exhibition "Parcours d’artistes" - Enghien - 4-5/06/2022 🇧🇪</li>
+                <li>Digital art Group exhibition "Best shoot" - Voidhall Gallery - 26-27/03/2022 🇺🇸</li>
+                <li>International juried photo Group exhibition "Abandoned interior" - PRAXIS Gallery - 19/02-05/03/2022 🇺🇸</li>
+                <li>Group exhibition digital art "The art of photography" - Blankwallgallery - 28-30/01/2022 🇬🇷</li>
+                <li>Group exhibition in digital art "Dramatic lightning" - BBA Gallery - 28-30/01/2022 🇩🇪</li>
+                <li>Selected/printed for SHUTTERBUG magazine - Amazing architecture 🇺🇸</li>
+                <li>Group exhibition digital art "Photography of the year 2021" - Bridgepoint gallery - 20/05-08/08/2022 🇬🇧</li>
+                <li>Group exhibition "Narrative as framed" - PRAXIS Gallery - 15-29/01/2022 🇺🇸</li>
+                <li>Group exhibition "The art of photography" - Blankwallgallery - 15-16/01/2022 🇬🇷</li>
+            </ul>
+        </div>
+        <div class="year">
+            <h2 onclick="toggleDropdown(this)">2021</h2>
+            <ul class="exhibitions-list">
+                <li>Group exhibition "Powerfull composition" - PRAXIS Gallery - 4-5/12/2021 🇺🇸</li>
+            </ul>
+        </div>
+    <script>
+        function toggleDropdown(element) {
+    const exhibitionsList = element.nextElementSibling;
+    exhibitionsList.style.display = exhibitionsList.style.display === 'none' || exhibitionsList.style.display === '' ? 'block' : 'none';
+}
+
+    </script>
+</body>
+</html>
